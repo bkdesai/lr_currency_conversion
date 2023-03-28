@@ -1,0 +1,5 @@
+Bundle-Name: currency-conversion-restbuilder-test
+Bundle-SymbolicName: com.tool.portlet.test
+Bundle-Version: 1.0.0
+-includeresource: com.tool.portlet.client.jar=../currency-conversion-restbuilder-client/build/libs/com.tool.portlet.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

@@ -1,0 +1,42 @@
+{
+	"name": "currency-conversion-web",
+	"version": "1.0.0",
+	"description": "Currency Conversion React Web module",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.31.2",
+		"liferay-npm-build-support": "^2.31.2",
+		"copy-webpack-plugin": "4.6.0",
+		"webpack": "4.29.6",
+		"webpack-cli": "3.3.0",
+		"webpack-dev-server": "3.2.1",
+		"@babel/cli": "^7.7.5",
+		"@babel/core": "^7.7.5",
+		"@babel/preset-env": "^7.7.6",
+		"@babel/preset-react": "^7.7.4"
+	},
+	"dependencies": {
+		"@clayui/alert": "3.85.0",
+		"@clayui/button": "3.83.0",
+		"@clayui/data-provider": "3.89.0",
+		"@clayui/form": "3.89.0",
+		"@clayui/icon": "3.56.0",
+		"@clayui/layout": "3.65.1",
+		"react": "16.12.0",
+		"react-dom": "16.12.0"
+	},
+	"scripts": {
+		"build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"deploy": "npm run build && lnbs-deploy",
+		"start": "lnbs-start"
+	},
+	"portlet": {
+		"com.liferay.portlet.display-category": "Currency Conversion",
+		"com.liferay.portlet.header-portlet-css": "/css/styles.css",
+		"com.liferay.portlet.instanceable": true,
+		"javax.portlet.name": "currencyconversionweb",
+		"javax.portlet.security-role-ref": "power-user,user",
+		"javax.portlet.display-name": "Currency Conversion React Web module"
+	},
+	"main": "index.js"
+}

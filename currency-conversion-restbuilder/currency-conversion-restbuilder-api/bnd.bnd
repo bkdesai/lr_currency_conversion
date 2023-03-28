@@ -1,0 +1,6 @@
+Bundle-Name: currency-conversion-restbuilder-api
+Bundle-SymbolicName: com.tool.portlet.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.tool.portlet.dto.v1_0,\
+	com.tool.portlet.resource.v1_0

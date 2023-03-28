@@ -1,0 +1,12 @@
+dependencies {
+	compile project(":modules:currency-conversion-restbuilder:currency-conversion-restbuilder-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+
+	restBuilder group: "com.liferay", name: "com.liferay.portal.tools.rest.builder", version: "1.0.222"
+	
+	compile project(":modules:instance-config-web")
+	implementation 'org.springframework:spring-web:5.3.13'
+}
+
+group = "com.tool.portlet"

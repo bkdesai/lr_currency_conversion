@@ -1,0 +1,9 @@
+apiDir: "../currency-conversion-restbuilder-api/src/main/java"
+apiPackagePath: "com.tool.portlet"
+application:
+    baseURI: "/currency-conversion-restbuilder"
+    className: "CurrencyConversionRestbuilderApplication"
+    name: "CurrencyConversionRestbuilder"
+author: "brijesh"
+clientDir: "../currency-conversion-restbuilder-client/src/main/java"
+testDir: "../currency-conversion-restbuilder-test/src/testIntegration/java"
